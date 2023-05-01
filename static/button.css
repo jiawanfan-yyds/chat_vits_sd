@@ -1,0 +1,30 @@
+.left-container button {
+    padding: 20px 20px;
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: rgb(229, 212, 139);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-container {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding: 10px;
+}
+
+.button-container-2 {
+    position: absolute;
+    top: calc(50% - 120px);
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding: 10px;
+}
+  
+  
+  

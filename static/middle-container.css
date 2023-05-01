@@ -1,0 +1,79 @@
+.middle-container {
+  position: relative;
+  display: flex;/* 将显示属性设置为“flex”以启用弹性盒布局 */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+  width: calc(40% );
+  margin: 0 0;
+}
+
+.middle-container .image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-container .image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  /* background-image: url("./下载.jpg"); */
+  object-fit: fill;
+}
+
+.middle-container .text-container {
+  width: calc(100% - 10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;/* 将flex容器中的项目沿主轴的垂直方向放置在底部 */
+  align-items: center;/* 将flex容器中的项目沿交叉轴的水平方向放置在中心 */
+  padding: 10px 5px;/* 在容器元素的顶部和底部设置内边距 */
+  z-index: 2;
+  position: absolute;/* 将容器元素放置在视口的底部 */
+  bottom: 0;
+  background-color: rgb(161, 92, 92);
+  opacity: 0.7;
+}
+
+.middle-container .text-container input {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  opacity: 0.8;
+  width: calc(80%-10px);
+}
+
+.middle-container .text-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #392a98;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin-left: auto;
+}
+
+
+
+.middle-container .chatbox-container {
+  position: absolute;
+  bottom: 65px;
+  width: 100%;
+  height: calc(50% - 80px);
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0.8;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
