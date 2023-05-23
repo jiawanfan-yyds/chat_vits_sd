@@ -1,11 +1,20 @@
 .middle-container {
   position: relative;
+<<<<<<< HEAD
   display: flex;/* 将显示属性设置为“flex”以启用弹性盒布局 */
+=======
+  display: flex;
+  /* 将显示属性设置为“flex”以启用弹性盒布局 */
+>>>>>>> fork/master
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: #f2f2f2;
+<<<<<<< HEAD
   width: calc(40% );
+=======
+  width: calc(40%);
+>>>>>>> fork/master
   margin: 0 0;
 }
 
@@ -31,11 +40,23 @@
   width: calc(100% - 10px);
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   justify-content: flex-end;/* 将flex容器中的项目沿主轴的垂直方向放置在底部 */
   align-items: center;/* 将flex容器中的项目沿交叉轴的水平方向放置在中心 */
   padding: 10px 5px;/* 在容器元素的顶部和底部设置内边距 */
   z-index: 2;
   position: absolute;/* 将容器元素放置在视口的底部 */
+=======
+  justify-content: flex-end;
+  /* 将flex容器中的项目沿主轴的垂直方向放置在底部 */
+  align-items: center;
+  /* 将flex容器中的项目沿交叉轴的水平方向放置在中心 */
+  padding: 10px 5px;
+  /* 在容器元素的顶部和底部设置内边距 */
+  z-index: 2;
+  position: absolute;
+  /* 将容器元素放置在视口的底部 */
+>>>>>>> fork/master
   bottom: 0;
   background-color: rgb(161, 92, 92);
   opacity: 0.7;
@@ -62,8 +83,11 @@
   margin-left: auto;
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> fork/master
 .middle-container .chatbox-container {
   position: absolute;
   bottom: 65px;
@@ -77,3 +101,66 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
+=======
+/* .middle-container .chatbox-container .chatbox .distinguish {
+  color: cyan;
+} */
+
+.middle-container .chatbox-container .chatbox .one-message {
+  color: azure;
+}
+
+.middle-container .chatbox-container .chatbox .one-message .chat-content span {
+  width: 300px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.middle-container .chatbox-container .chatbox .user .chat-content img{
+  float: right;
+  width: 20px;
+  height: 20px;
+}
+.middle-container .chatbox-container .chatbox .server .chat-content img{
+  float: left;
+  width: 20px;
+  height: 20px;
+}
+
+.middle-container .chatbox-container .chatbox .one-message:nth-of-type(odd) {
+  clear: both;
+  background-color: goldenrod;
+  float: right;
+  margin: 0 20px 10px 15px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+}
+.middle-container .chatbox-container .chatbox .one-message:nth-of-type(even) {
+  clear: both;
+  background-color: cadetblue;
+  float: left;
+  margin: 0 10px 10px 20px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+}
+
+.middle-container .chatbox-container .chatbox .one-message .chat-content div.right-triangle {
+  /* height: 0%;
+  width: 0%; */
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent transparent transparent gold;
+  position: relative;
+  /* right: 0px; */
+}
+.middle-container .chatbox-container .chatbox .one-message .chat-content div.left-triangle {
+  /* height: 0%;
+  width: 0%; */
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent aquamarine transparent transparent;
+  position: relative;
+  /* left: 17px; */
+}
+>>>>>>> fork/master
