@@ -26,9 +26,6 @@ from vits.text import text_to_sequence
 from scipy.io.wavfile import write
 
 
-
-
-
 app = Flask(__name__)
 socketio = SocketIO(app,cors_allowed_origins='*')
 
@@ -36,7 +33,7 @@ socketio = SocketIO(app,cors_allowed_origins='*')
 def index():
     return render_template('index.html')
 
-openai.api_key = "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"
+openai.api_key = "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"#此处填入API的key
 
 def get_audio(text):
     # 加载模型
@@ -70,14 +67,9 @@ def chat():
     ],
     temperature=0.7,
   )
-  
 
-  # 生成语音
-  # audio_file = get_audio(response.choices[0].text)
 
   # 发送聊天结果和语音给客户端
-  # socketio.emit('chat_response', {'text': response.choices[0].text, 'audio_file': audio_file})
-  # print(response.choices[0].message['content'])
   socketio.emit('chat_response', response.choices[0].message['content'] )
 
   # 返回聊天结果
